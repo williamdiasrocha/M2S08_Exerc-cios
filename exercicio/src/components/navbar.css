@@ -1,0 +1,49 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;/* Adicionado para separar o botão Logout */
+  align-items: center;
+  
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  max-width: 960px; /* Defina a largura máxima do menu */
+  width: 100%; /* Ocupar todo o espaço disponível */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  
+}
+
+.navbar a.active {
+  color: #ff8800;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  font-size: 18px;
+  padding: 0;
+  margin-left: 16px;
+}
+
+.navbar .logout-button:hover {
+  color: #f00;
+}
